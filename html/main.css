@@ -1,0 +1,128 @@
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.a {
+  background-color: black;
+  padding: 30px;
+}
+
+.form-white {
+  background-color: rgb(244, 48, 48);
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+}
+
+td {
+  border: 2px solid black;
+}
+
+.ab {
+  border: 1px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background: grey;
+  margin: 5px;
+}
+
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+}
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 10px;
+}
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
+.aa {
+  width: 100%;
+  margin: 10px;
+  height: 800px;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.a1 {
+  width: 200px;
+  height: 400px;
+  background: rgb(201, 183, 183);
+}
+
+.a2 {
+  width: 200px;
+  height: 400px;
+  background: rgb(179, 213, 255);
+}
+
+.a3 {
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+
+.a4 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 30%;
+  left: 10em;
+}
+.a3:hover {
+  opacity: 0.9;
+  transform: scale(1.5);
+}
+.a3:hover .a4 {
+  visibility: visible;
+}
+@media screen and (max-width: 1600px) {
+  .flex-item {
+    font-size: 40px;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 768px) {
+    .flex-item {
+      font-size: 30px;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .flex-item {
+    font-size: 10px;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
